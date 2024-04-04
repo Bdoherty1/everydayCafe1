@@ -1,0 +1,120 @@
+/* Home.css */
+
+.home-container {
+  min-height: 100vh;
+  /* Ensure full viewport height coverage */
+}
+
+.home-banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.home-bannerImage-container {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.home-bannerImage-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  border-radius: 1rem;
+}
+
+.home-text-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+/* Home.css */
+.carousel-container {
+  position: relative;
+}
+
+.carousel-image {
+  position: relative;
+  width: 100%;
+  height: 700px; /* Set height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.prev-arrow,
+.next-arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: whitesmoke; 
+  opacity: 50%;
+}
+
+.prev-arrow {
+  left: 10px !important; /* Adjust left position as needed */
+}
+
+.next-arrow {
+  right: 10px !important; /* Adjust right position as needed */
+}
+
+
+
+.content-container {
+  position: relative;
+  z-index: 2;
+  /* Ensure content appears above the carousel */
+}
+
+.mobile-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-view .carousel-image {
+  width: 100vw;
+  height: 300px;
+  margin-bottom: 2px;
+}
+
+
+/* Add this to your CSS file */
+.home-container.mobile-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 100%; /* Make navbar take up entire width */
+}
+
+
+@media (max-width: 1000px) {
+  .carousel-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set height as needed */
+    background-size: cover;
+    background-position: center;
+  }
+
+}

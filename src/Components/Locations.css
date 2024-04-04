@@ -1,0 +1,48 @@
+/* Home.css */
+
+/* Define styles for locations and hours containers */
+.location-container{
+  
+  max-width: 600px; 
+  margin: auto;
+  
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+
+.location-column,
+.hours-column {
+  margin: 0 auto; 
+  padding: 0 1rem; 
+}
+
+
+.location-hours-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  padding: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 100%;
+  opacity: 80%;
+
+}
+
+/* Adjust styles for smaller screens (like iPhones) */
+@media only screen and (max-width: 600px) {
+  .location-container {
+    max-width: 50%;
+    padding: 0 10px;
+  }
+  .primary-heading {
+    font-size: x-large;
+  }
+  .hours-column {
+    max-width: 50%;
+    padding: 0 10px;
+  }
+}

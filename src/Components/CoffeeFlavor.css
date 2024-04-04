@@ -1,0 +1,47 @@
+
+  
+  .coffee-flavors-menu-container {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center; /* Center the content */
+  }
+  
+  .coffee-flavors-menu h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  .coffee-flavors-menu .subheading {
+    margin-top: 10px; /* Add margin between title and subheading */
+  }
+  
+  .flavor-columns {
+    display: flex;
+    justify-content: space-between; /* Spread columns evenly */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  }
+  
+  .flavor-column {
+    flex-basis: calc(50% - 20px); /* Two columns with a gap */
+    margin-top: 20px; /* Add space between columns and subheading */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .flavor-column ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+  }
+  
+  .flavor-column li {
+    margin-bottom: 10px; /* Add space between flavor items */
+  }
+  
+  /* Media query for small screens (like iPhones) */
+  @media (max-width: 600px) {
+    .flavor-column {
+      flex-basis: calc(100% - 20px); /* Full width on small screens */
+    }
+  }
+  
